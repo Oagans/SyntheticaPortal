@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synthetica</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet" />
+  <script defer src="/static/ia.js"></script>
+</head>
+<body>
+  <div class="canvas">
+    <div class="categorias-wrapper">
+      <div class="categorias">
+        <a href="/avancos">Avanços Tecnológicos</a>
+        <a href="/documentos"> Documentação</a>
+        <a href="/arte-cultura">IA na Arte e Cultura</a>
+      </div>
+    </div>
+
+    <div class="graphic">
+      <div class="circle-container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+      </div>
+      <h1 class="logo-text">SYNTHETICA</h1>
+    </div>
+
+    <a href="./ia-hub" class="synth-ai-button" style="text-decoration: none;">
+      <div class="orbital">
+        <div class="dot-ia" style="animation-delay: 0s;"></div>
+        <div class="dot-ia" style="animation-delay: 1s;"></div>
+        <div class="dot-ia" style="animation-delay: 2s;"></div>
+      </div>
+      <p class="label">Oi! Clique em mim!</p>
+    </a>
+    
+    <!-- Interface IA -->
+    <div id="synth-interface" class="section" style="display: none; z-index: 20;">
+      <button id="fechar-ia" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; font-size: 1.2rem; cursor: pointer;">&#10005;</button>
+      <h2 class="logo-text">IA Synthetica</h2>
+
+      <div id="chat-container">
+        <div id="chat-messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Digite sua mensagem..." required />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <form id="ia-form" style="display: none;">
+        <input type="text" id="ia-title" placeholder="Título" required />
+        <textarea id="ia-description" placeholder="Descrição" required></textarea>
+        <select id="ia-category" required>
+          <option value="">Selecione a categoria</option>
+          <option value="Avanços Tecnológicos">Avanços Tecnológicos</option>
+          <option value="IA na Arte e Cultura">IA na Arte e Cultura</option>
+        </select>
+        <button type="submit">Postar Documentação</button>
+      </form>
+
+      <ul id="ia-lista-conteudos" style="margin-top: 1rem; display: none;"></ul>
+    </div>
+
+    <!-- Orbitais visuais -->
+    <div class="interlace-circle ic-1"><div class="orbit" style="animation-duration: 18s;"><div class="dot"></div></div></div>
+    <div class="interlace-circle ic-2"><div class="orbit" style="animation-duration: 22s;"><div class="dot"></div></div></div>
+    <div class="interlace-circle ic-3"><div class="orbit" style="animation-duration: 26s;"><div class="dot"></div></div></div>
+    <div class="interlace-circle ic-4"><div class="orbit" style="animation-duration: 30s;"><div class="dot"></div></div></div>
+    <div class="interlace-circle ic-5"><div class="orbit" style="animation-duration: 34s;"><div class="dot"></div></div></div>  
+    </div>
+  </div>
+</body>
+</html>

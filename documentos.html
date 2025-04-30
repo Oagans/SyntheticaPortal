@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentos - Synthetica</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Mars';
+      src: url('./static/fonts/mars.ttf') format('opentype');
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+  <header class="menu">
+    <nav>
+      <a href="/" class="botao">Voltar</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2 class="logo-text">Gerenciar Documentos</h2>
+
+    <form id="doc-form">
+      <input type="text" id="title" placeholder="Título do Documento" required />
+      <textarea id="description" placeholder="Descrição" required></textarea>
+      <select id="categoria" name="categoria" required>
+        <option value="" disabled selected>Categoria</option>
+        <option value="Avanços Tecnológicos">Avanços Tecnológicos</option>
+        <option value="IA na Arte e Cultura">IA na Arte e Cultura</option>
+      </select>
+    
+      <button type="submit" class="botao" style="margin-top: 1rem;">Postar Documentação</button>
+    
+      <ul id="doc-list"></ul>
+    </form>
+    
+      <div class="ia-button" onclick="abrirSynth()">
+        <div class="orbita">
+          <div class="orbital ponto1"></div>
+          <div class="orbital ponto2"></div>
+          <div class="orbital ponto3"></div>
+        </div>
+        <div class="nucleo"></div>
+      </div>
+      
+    </form>
+
+    <ul id="doc-list"></ul>
+  </main>
+  <script src="./static/documentos.js"></script>
+</body>
+</html>

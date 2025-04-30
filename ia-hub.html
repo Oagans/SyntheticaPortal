@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synth - Synthetica</title>
+  <link rel="stylesheet" href="./static/ia-hub.css" />
+</head>
+<body>
+  <a href="/" class="voltar-seta">← Voltar</a>
+  <main class="container">
+    <div class="orbital">
+      <div class="planet"></div>
+      <div class="orbit">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+      </div>
+    </div>
+
+    <section class="chatbox">
+      <div id="chat-messages" class="chat-messages"></div>
+      <div class="chat-header">
+        <h1>Synth</h1>
+      </div>
+      <p>
+        Olá! Eu sou a Synth! Seja bem-vindo ao portal SyntheticAI!<br>
+        Aqui, você poderá ver as últimas notícias do universo das IAs.
+        Estou aqui para te auxiliar, no que for preciso.
+      </p>
+      
+      
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Digite o que você quer dizer à Synth" />
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./static/ia-hub.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fcfcfa;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem; /* Espaço entre os dois elementos */
+  padding: 2rem;
+}
+
+.orbital {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet {
+  width: 180px;
+  height: 180px;
+  background: #111;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.orb {
+  position: absolute;
+  background: #111;
+  border-radius: 50%;
+}
+
+.orb1 {
+  width: 30px;
+  height: 30px;
+  top: 5%;
+  right: 0%;
+}
+
+.orb2 {
+  width: 20px;
+  height: 20px;
+  bottom: 10%;
+  left: 10%;
+}
+
+.orb3 {
+  width: 10px;
+  height: 10px;
+  top: 20%;
+  left: 55%;
+}
+
+.chatbox {
+  width: 480px;
+  min-height: 550px; /* aumente esse valor conforme desejar */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.2rem;
+}
+
+.chat-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.chatbox p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.chatbox p:last-of-type {
+  font-weight: bold;
+}
+
+.chat-input {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-top: 48%;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.chat-input button {
+  background: #f1f1f1;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.voltar-seta {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ccccccd8; 
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.voltar-seta:hover {
+  transform: scale(1.2);
+}
